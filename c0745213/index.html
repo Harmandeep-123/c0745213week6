@@ -8,14 +8,14 @@
    
     <script type="text/javascript">
         var divs = new Array();
-        divs[0] = "errfirst";
-        divs[1] = "errlast";
-        divs[2] = "errLast";
+        divs[0] = "errFirst";
+        divs[1] = "errLast";
+        divs[2] = "errEmail";
         divs[3] = "errUid";
         divs[4] = "errPassword";
         divs[5] = "errConfirm";
         function validate() {
-            var input = new Array();
+            var inputs = new Array();
             inputs[0] = document.getElementById('first').value;
             inputs[1] = document.getElementById('last').value;
             inputs[2] = document.getElementById('email').value;
@@ -72,39 +72,39 @@
     <table id="table1">
         <tr>
             <td>first Name:</td>
-            <td><input type="text" id="first" onkeyup="validate();"</td>
+            <td><input type="text" id="first" onkeyup="validate();" /></td>
             <td><div id="errFirst"></div></td>
         </tr>
         <tr>
             <td>last Name:</td>
-            <td><input type="text" id="last" onkeyup="validate();"</td>
+            <td><input type="text" id="last" onkeyup="validate();" /></td>
             <td><div id="errLast"></div></td>
 
         </tr>
         <tr>
             <td>Email:</td>
-            <td><input type="text" id="email" onkeyup="validate();"</td>
+            <td><input type="text" id="email" onkeyup="validate();" /></td>
             <td><div id="errEmail"></div></td>
         </tr>
         <tr>
             <td>User id:</td>
-            <td><input type="text" id="uid" onkeyup="validate();"</td>
+            <td><input type="text" id="uid" onkeyup="validate();" /></td>
             <td><div id="errUid"></div></td>
         </tr>
         <tr>
             <td>Password:</td>
-            <td><input type="text" id="password" onkeyup="validate();"</td>
+            <td><input type="text" id="password" onkeyup="validate();" /></td>
             <td><div id="errPassword"></div></td>
         </tr>
         <tr>
         <td> Confirm Password:</td>
         
-        <td><input type="text" id="confirm" onkeyup="validate();"</td>
+        <td><input type="text" id="confirm" onkeyup="validate();" /></td>
         <td><div id="errConfirm"></div></td>
         </tr>
         <tr>
-            <td> <input type="button" id="create" value="Create" onclick="validate(); finalValidate();"</td>
-            <td><div id="errFinal"><</div></td>
+            <td> <input type="button" id="create" value="Create" onclick="validate(); finalValidate();" /></td>
+            <td><div id="errFinal"></div></td>
         </tr>
     </table>
         
